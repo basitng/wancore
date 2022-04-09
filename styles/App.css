@@ -1,0 +1,345 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins-header";
+  src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+
+h1,
+h2 {
+  font-family: "poppins-header";
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  background: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins";
+  color: var(--text2);
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 48px;
+  background-color: #f21b42;
+  margin-top: 2rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.button a {
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #eee !important;
+  cursor: pointer;
+}
+
+.button:hover a {
+  color: #f21b42;
+}
+
+button {
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+button a {
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #eee !important;
+}
+
+button:hover a {
+  color: #f21b42 !important;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+nav .menu {
+  display: none;
+}
+
+nav ul a {
+  color: #555;
+  text-decoration: none;
+  margin-right: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  font-weight: 600;
+}
+
+nav ul a:hover {
+  color: #f21b42;
+}
+
+nav ul a::before {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background: #f21b42;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 48px;
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+nav ul a:hover::before {
+  width: 100%;
+}
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 140px 50px;
+  position: relative;
+  background: #fff;
+}
+
+.banner img {
+  width: 600px;
+  position: absolute;
+  top: 0;
+  right: -2%;
+}
+
+.banner h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #011b33;
+}
+
+.banner h1 span {
+  color: #f21b42;
+}
+
+.banner h3 {
+  font-weight: lighter;
+  color: #011b33;
+}
+
+.banner button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 48px;
+  background-color: #f21b42;
+  margin-top: 2rem;
+}
+
+.banner button a {
+  color: #fff;
+  font-family: "poppins";
+}
+
+.container {
+  width: 100%;
+  background: #080a0d;
+  padding: 150px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 99% 85%, 49% 100%, 49% 100%, 0 85%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 99% 85%, 49% 100%, 49% 100%, 0 85%, 0 0);
+}
+
+.container h1 {
+  font-size: 6rem;
+  color: transparent;
+  background: -webkit-linear-gradient(90deg, #433df2, #f21b42, #b46fbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container p {
+  max-width: 100%;
+  color: #555;
+  line-height: 1.8rem;
+}
+
+.container .cluster--two img {
+  width: 100%;
+  float: right;
+  border-radius: 40px;
+}
+
+.container2 {
+  padding-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 8rem;
+}
+
+.container2 header {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.container2 header .strong {
+  margin-top: -1rem;
+}
+
+.container2 .header2 {
+  font-size: 5rem;
+  color: #011b33;
+}
+
+.container2 .header2 span {
+  color: #f21b42;
+}
+
+.container2 .grid--3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding-top: 3rem;
+}
+
+.container2 .grid--3 .grid {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.container2 .grid--3 .grid .header {
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container2 .grid--3 .grid .image--wrapper {
+  overflow: hidden;
+}
+
+.container2 .grid--3 .grid .image--wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  opacity: 0.4;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container2 .grid--3 .grid .image--wrapper .card--image {
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  height: 50vh !important;
+}
+
+.container2 .grid--3 .grid .image--wrapper .card--image:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.container2 .grid--3 .grid .image--wrapper .grid:hover ~ .image--wrapper::before {
+  background: -webkit-gradient(linear, left top, right top, from(#f21b42), to(#433df2));
+  background: linear-gradient(90deg, #f21b42, #433df2);
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.container3 {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#f21b42), to(#b46fbb));
+  background: linear-gradient(90deg, #f21b42, #b46fbb);
+  padding: 100px 50px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container3 h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: "poppins-header";
+}
+
+.container3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container4 {
+  padding: 100px 50px;
+}
+/*# sourceMappingURL=App.css.map */
